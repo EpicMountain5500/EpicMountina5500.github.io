@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyMeds Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #5b6472;
+      --heading: #0f172a;
+      --accent: #0f766e;
+      --border: #d7dee8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: linear-gradient(180deg, #eef6ff 0%, var(--bg) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 72px;
+    }
+
+    article {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 32px;
+      box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+    }
+
+    h1, h2 {
+      color: var(--heading);
+      line-height: 1.2;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 32px;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p, li {
+      font-size: 1rem;
+    }
+
+    .updated {
+      color: var(--muted);
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    strong {
+      color: var(--heading);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #f1f5f9;
+      border-radius: 6px;
+      padding: 0.1em 0.35em;
+    }
+
+    ul {
+      padding-left: 1.4rem;
+    }
+
+    li + li {
+      margin-top: 0.4rem;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: #f0fdfa;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 20px 12px 32px;
+      }
+
+      article {
+        padding: 24px 18px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <h1>MyMeds Privacy Policy</h1>
+      <p class="updated"><em>Last updated: 2026-06-24</em></p>
+
+      <p>This privacy policy describes how the current MyMeds app project handles information based on the codebase reviewed on 2026-06-24.</p>
+
+      <h2>Summary</h2>
+      <p>MyMeds is designed to store medication and patient information on the device. Based on the current codebase, the app does not require MyMeds user accounts, does not run ads, does not include third-party analytics SDKs, and does not send patient records to a MyMeds-owned backend service.</p>
+      <p>MyMeds does include an optional Google Sheets sync feature. If you choose to connect a Google account and enable sync, selected patient data is sent to Google Sheets under your Google account.</p>
+
+      <h2>Information MyMeds May Store</h2>
+      <p>If you use the app, it may store the following on your device:</p>
+      <ul>
+        <li>Patient names</li>
+        <li>Patient birth dates</li>
+        <li>Prescription details, including:
+          <ul>
+            <li>label name</li>
+            <li>medication name</li>
+            <li>dosage</li>
+            <li>instructions</li>
+            <li>prescription / Rx number</li>
+            <li>refill count</li>
+            <li>pill quantity and remaining pills</li>
+            <li>DIN number</li>
+            <li>pharmacy name</li>
+            <li>doctor name</li>
+            <li>contact number</li>
+          </ul>
+        </li>
+        <li>OCR-extracted text from prescription labels</li>
+        <li>Prescription images you import or capture</li>
+        <li>Reminder settings and recent dose history</li>
+        <li>Blood pressure readings with recorded date and time</li>
+        <li>Weight entries with unit and recorded date and time</li>
+        <li>Privacy and security preferences, such as app lock and backup preferences</li>
+        <li>Optional Google sync settings, such as:
+          <ul>
+            <li>Google account email address</li>
+            <li>Google spreadsheet ID and spreadsheet name for a patient</li>
+            <li>OAuth client ID entered by the user</li>
+            <li>Google access token metadata in app storage</li>
+            <li>Google refresh token in the iOS keychain</li>
+          </ul>
+        </li>
+      </ul>
+      <p>Because medication, patient, and vitals information can relate to a person's health care, some of this information may be considered sensitive health-related information.</p>
+
+      <h2>How MyMeds Uses Information</h2>
+      <p>The current app uses stored information to:</p>
+      <ul>
+        <li>display patient and prescription records</li>
+        <li>import prescription details from images</li>
+        <li>help manage medication reminders</li>
+        <li>estimate supply and refill-related status</li>
+        <li>store blood pressure and weight history</li>
+        <li>protect access to the app when device authentication is enabled</li>
+        <li>optionally create and update a Google spreadsheet for a patient when sync is enabled</li>
+      </ul>
+
+      <h2>Camera and Photo Library Access</h2>
+      <p>MyMeds may request access to:</p>
+      <ul>
+        <li><strong>Camera</strong>: to photograph a prescription label</li>
+        <li><strong>Photo Library</strong>: to choose an existing prescription image</li>
+      </ul>
+      <p>Imported prescription images may be stored locally with the prescription record.</p>
+
+      <h2>OCR and On-Device Processing</h2>
+      <p>The app uses Apple's Vision framework to read text from prescription images.</p>
+      <p>Based on the current implementation, this OCR processing happens on-device.</p>
+
+      <h2>Notifications</h2>
+      <p>If you enable reminders, the app uses local notifications scheduled on your device to remind you to take medication.</p>
+
+      <h2>Face ID / Passcode Protection</h2>
+      <p>If you enable app locking, MyMeds uses iPhone device authentication, such as Face ID or device passcode, to protect access to app data.</p>
+
+      <h2>Storage, Protection, and Backups</h2>
+      <p>The current app stores its main records locally using Apple platform storage on the device.</p>
+      <p>The current code also applies iOS file protection settings intended to protect app files while the device is locked.</p>
+      <p>MyMeds includes a setting to exclude app data from device backups. If you turn that setting off, app data may be included in encrypted device backups or iCloud backups, depending on your Apple settings.</p>
+
+      <h2>Optional Google Sheets Sync</h2>
+      <p>If you enable Google Sheets sync, MyMeds asks you to sign in with Google using Google's consent flow inside the app.</p>
+      <p>Based on the current implementation:</p>
+      <ul>
+        <li>MyMeds does not collect or store your Google password</li>
+        <li>the app requests Google permissions for spreadsheet access and basic account identity needed to confirm the signed-in email address</li>
+        <li>the app may create a spreadsheet in your Google account for a patient</li>
+        <li>the app writes three tabs to that spreadsheet: <code>Medications</code>, <code>Blood Pressure</code>, and <code>Weight</code></li>
+        <li>synced spreadsheet data may include patient name, medication details, doctor and pharmacy fields, imported dates, blood pressure readings, and weight history</li>
+        <li>Google OAuth tokens are stored locally on the device, including a refresh token in the iOS keychain</li>
+      </ul>
+      <p>Once data is synced to Google Sheets, that copied data is also subject to Google's privacy and security practices.</p>
+
+      <h2>Data Sharing</h2>
+      <p>Based on the current codebase reviewed on 2026-06-24:</p>
+      <ul>
+        <li>MyMeds does not sell personal data</li>
+        <li>MyMeds does not use advertising SDKs</li>
+        <li>MyMeds does not appear to send patient records to a MyMeds-operated backend</li>
+        <li>MyMeds does not appear to use third-party analytics SDKs</li>
+        <li>MyMeds does not appear to include third-party crash reporting SDKs</li>
+        <li>MyMeds may send data to Google only if you explicitly enable Google Sheets sync</li>
+      </ul>
+
+      <h2>External Websites and Services</h2>
+      <p>The app may open external web content when you choose to look up medication information, such as a Mayo Clinic search page. Those external websites have their own privacy practices.</p>
+      <p>If you enable Google Sheets sync, Google services are also used under your own Google account.</p>
+
+      <h2>Data Retention and Deletion</h2>
+      <p>Data stored in MyMeds remains on the device until it is deleted by the user, removed from the app, or removed when the app is deleted, subject to any device backup behavior.</p>
+      <p>If you sync data to Google Sheets, copies stored in Google Sheets may remain there until you delete or change them in your Google account.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>This project does not include a dedicated children's privacy flow.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>This document should be updated if the app later adds:</p>
+      <ul>
+        <li>cloud sync beyond Google Sheets</li>
+        <li>MyMeds user accounts</li>
+        <li>analytics</li>
+        <li>crash reporting</li>
+        <li>third-party SDKs</li>
+        <li>server-side storage</li>
+        <li>data sharing with pharmacies, providers, or caregivers</li>
+      </ul>
+
+      <h2>Developer Note</h2>
+      <p class="note">This policy is a project draft based on the current local codebase and is not legal advice. Before public release, review it against the final shipped app behavior, App Store disclosures, and any applicable legal or regulatory requirements.</p>
+    </article>
+  </main>
+</body>
+</html>
